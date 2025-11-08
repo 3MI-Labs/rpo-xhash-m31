@@ -24,11 +24,12 @@ class ExampleClass:
 # Example usage
 if __name__ == "__main__":
     # Define parameters
-    p = 2147483647  # Example prime
+    p = 2^31-1  
     Fp = lambda x: x % p  # Fp is the field of integers modulo p
     m = 24
-    capacity = 8  # Example capacity
+    capacity = 8  
     N = 7
     example_instance = ExampleClass(p, Fp, m, capacity, N)
     round_constants = example_instance._get_round_constants()
+
     print(round_constants)
